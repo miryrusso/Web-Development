@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<form action="" method="post">
+    <table>
+        <tr>
+            <th colspan="2">Registrazione utente </th>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr> 
+            <td> Email </td>
+            <td> Conferma indirizzo email  </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" name="Email" id="Email" placeholder="Email" >
+            </td>
+            <td>
+                <input type="email" name="Email" id="Email" placeholder="Email" >
+            </td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr>
+            <td> Password </td>
+            <td> Conferma Password</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" name="password" id="password" placeholder="Password" >
+            </td>
+            <td>
+                
+                <input type="password" name="password" id="password" placeholder="Password" >
+            </td>
+        </tr>
+        <tr><th colspan="2"><hr color="red"></th></tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <tr><td colspan="3"></td></tr>
+                    <tr>
+                        <td> Nome </td>
+                        <td> Secondo Nome </td>
+                        <td> Cognome </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="fname" placeholder="Nome" style="width: 85%;">
+                        </td>
+                        <td>
+                            <input type="text" name="sname" placeholder="Secondo nome" style="width: 85%;">
+                        </td>
+                        <td>
+                            <input type="text" name="surname" placeholder="Cognome" style="width: 98%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Sesso </td>
+                        <td> Città ed indirizzo </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="gender" id="gender" style="width: 89%;">
+                                <option value="Male">Maschio</option>
+                                <option value="Female">Femmina</option>
+                                <option value="Other">Altro</option>
+                            </select>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" placeholder="Città ed indirizzo" style="width:99%;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr><th colspan="2"><hr color="red"><br></th></tr>
+        <tr>
+            <td>Interessi</td>
+            <td>Sistema Utilizzato</td>
+        </tr>
+        <tr>
+            <td>
+                <table border="" >
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="interessi" value="Videogame"> Videogame <br>
+                            <input type="checkbox" name="interessi" value="Arte"> Arte <br>
+                            <input type="checkbox" name="interessi" value="Fotografia" checked> Fotografia <br>
+                            <input type="checkbox" name="interessi" value="Alcool"> Alcool
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="">
+                    <tr>
+                        <td>
+                            <input type="radio" name="Os"  value="Windows"> Miscrosoft Windows <br>
+                            <input type="radio" name="Os"  value="Linux"> Linux <br>
+                            <input type="radio" name="Os"  value="MacOS" checked> MacOS <br>
+                            <input type="radio" name="Os"  value="DOS" > Miscrosoft DOS
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr><th colspan="2"><hr color="red"><br></th></tr>
+        <tr>
+            <td colspan="2"><center>Accetti le condizioni?</center></td>
+        </tr>
+        <tr><th colspan="2"><br></th></tr>
+        <tr>
+            <td colspan="2"><center><input type="checkbox" name="condizioni" id="" value="Condizioni"> Accetto <br></center></td>
+        </tr>
+    </table>
+    <center><button>Registrati</button></center>
+</form>
+</body>
+</html>
