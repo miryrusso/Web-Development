@@ -15,3 +15,10 @@ Ecco una panoramica degli argomenti trattati all'interno di questa repository:
 - NodeJs
 - Web Application: principi e concetti
 - Sviluppo in React
+
+
+## Contatti
+
+Se hai domande o hai bisogno di assistenza, non esitare a contattarmi. Puoi inviarmi un messaggio direttamente qui su GitHub o utilizzare i miei contatti seguenti:
+
+- Email: russo.miriana@studium.unict.it
