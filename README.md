@@ -1,6 +1,6 @@
 # Web-Development
 
-Benvenuti nella repository Web-Development! Qui troverete una collezione di risorse per la preparazione dell'esame di Web, in particolare concentrato sui linguaggi relativi al Frontend e al Backend, con codici commentati e svolti, nonché esempi di esercizi su vari argomenti cruciali. 
+Benvenuti nella repository Web-Development! Qui troverete una collezione di risorse per la preparazione dell'esame di Web presso l'Università di Informatica, in particolare concentrato sui linguaggi relativi al Frontend e al Backend, con codici commentati e svolti, nonché esempi di esercizi su vari argomenti cruciali. 
 
 ## Contenuto della Repository
 
