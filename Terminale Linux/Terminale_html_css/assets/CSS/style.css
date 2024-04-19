@@ -1,0 +1,209 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: grab;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    -webkit-appearance: none ;
+    appearance: none;
+}
+
+#desktop {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+   
+    background-image: url('../img/ubuntu_background.jpg'); 
+    background-size: cover;
+}
+
+.icon {
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.icon img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.icon p {
+    margin-top: 10px;
+}
+
+.icon:hover {
+    background-color: #f2f2f229;
+}
+
+.terminal {
+    width: 600px;
+    min-width: 450px;
+    height: 300px;
+    min-height: 100px;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgb(25, 25, 25), rgb(12, 12, 12));
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 20px 25px 60px 1px;
+    overflow: hidden;
+    top: 20vh;
+    left: 25%;
+    resize: both;
+}
+
+.upbar {
+    width: 100%;
+    height: 30px;
+    top: 0;
+    background: rgba(87, 79, 79, 0.24);
+    border-radius: 10px 10px 0 0;
+}
+
+.but_1,
+.but_2, .but_3, .sposta{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: linear-gradient(0deg, rgba(246, 239, 253, 0), rgb(1, 1, 1));
+    border: 1.5px solid rgb(20, 19, 19);
+    border-radius: 50%;
+}
+
+
+.prova{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: linear-gradient(0deg, rgba(246, 239, 253, 0), rgb(1, 1, 1));
+    border: 1.5px solid rgb(20, 19, 19);
+    border-radius: 50%;
+}
+
+
+.text_upbar {
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    display: inline;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+.text_terminal {
+    background: none;
+    border: none;
+    outline: 10px solid transparent;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 30px);
+    bottom: 0;
+    resize: none;
+    font-size: 1vw;
+    color: rgb(211, 206, 216);
+    word-break: break-all;
+   
+}
+
+.cross, .line, .square{
+    color: rgb(209, 209, 209);
+}
+
+
+
+.cross {
+    left: 5px;
+    top: 5px;
+}
+
+.line {
+    left: 30px;
+    top: 5px;
+}
+
+.square {
+    left: 55px;
+    top: 5px;
+}
+
+.text {
+    color: green;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.bash::before {
+    content: 'miriana@miriana-Katana-GF66-11UD:~$';
+    color: green;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+.terminal:has( > .upbar .but_3:checked) {
+    width:100%;
+    height:100%;
+    margin:none;
+    top:0;
+    left:0;
+}
+
+
+
+.terminal:has( > .upbar .but_1:checked),  .terminal:has( > .upbar .but_2:checked){
+   display: none;
+}
+
+#chiudi, #riduci, #ingrandisci {
+    display: none;
+}
+
+
+.custom-radio-label {
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background: linear-gradient(0deg, rgba(246, 239, 253, 0), rgb(1, 1, 1));
+    color: white; 
+    text-align: center; 
+    line-height: 20px; 
+    border-radius: 50%; 
+    margin-top: 5px;
+}
+
+
+#checkboxSposta {
+    display: none; 
+}
+
+#mioDiv {
+    transition: transform 7s linear; 
+}
+
+#checkboxSposta:checked ~ #mioDiv {
+    transform: translate(300px, 300px); 
+}
