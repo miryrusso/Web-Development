@@ -1,0 +1,214 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+#desktop {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+   
+    background-image: url('../img/ubuntu_background.jpg'); 
+    background-size: cover;
+}
+
+#desktop>.menu{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+#desktop>.menu>.flex-container>.icon,
+#desktop>.menu>.menu-sotto>.icon
+ {
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#desktop>.menu>.flex-container>.icon img,
+#desktop>.menu>.menu-sotto>.icon img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+#desktop>.menu>.flex-container>.icon:hover {
+    background-color: #f2f2f229;
+}
+
+#desktop>.app-container{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#desktop>.app-container>.application{
+    position: absolute;
+    min-width: 500px;
+    min-height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgb(197, 195, 195);
+    resize: both;
+}
+
+#desktop>.app-container>.application>.top-bar{
+    position: absolute;
+    top:0; 
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#desktop>.app-container>.application>.top-bar>.title{
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+#desktop>.app-container>.application>.top-bar>.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin-right: 5px;
+
+}
+
+#desktop>.app-container>.application>.top-bar>.buttons>.btn{
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(0deg, rgba(246, 239, 253, 0), rgb(1, 1, 1));
+    border: 1.5px solid rgb(20, 19, 19);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#desktop>.app-container>.application>.content{
+    position: absolute;
+    top:30px; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    word-break: break-all;
+
+}
+
+#desktop>.app-container>.application>.content.terminal-container{
+    background-color: #230722;
+    color: white;
+}
+
+#desktop>.app-container>.application>.content.terminal-container>.terminal-line::before{
+    color: greenyellow;
+    /* content: "miriana@miriana-Katana-GF66-11UD:~"; */
+    margin-right: 7px;
+    content: attr(data-before);
+    float:left;
+}
+
+#desktop>.app-container>.application>.content.terminal-container>.terminal-line{
+    outline: none;
+    clear: both;
+}
+
+
+
+#desktop>.app-container>.taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #33333300;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.terminal {
+    width: 600px;
+    min-width: 450px;
+    height: 300px;
+    min-height: 100px;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgb(25, 25, 25), rgb(12, 12, 12));
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 20px 25px 60px 1px;
+    overflow: hidden;
+    top: 20vh;
+    left: 25%;
+    resize: both;
+}
+
+.upbar {
+    width: 100%;
+    height: 30px;
+    top: 0;
+    background: rgba(87, 79, 79, 0.24);
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+
+.text_upbar {
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    display: inline;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+.text_terminal {
+    background: none;
+    border: none;
+    outline: 10px solid transparent;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 30px);
+    bottom: 0;
+    resize: none;
+    font-size: 1vw;
+    color: rgb(211, 206, 216);
+    word-break: break-all;
+   
+}
+
+.cross, .line, .square{
+    color: rgb(209, 209, 209);
+}
+
+
+.bash::before {
+    content: 'miriana@miriana-Katana-GF66-11UD:~$';
+    color: green;
+}
